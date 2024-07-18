@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZAssetManager", "EZAssetManager.csproj", "{A9FE458B-B097-41A2-890E-39D86440C5B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9FE458B-B097-41A2-890E-39D86440C5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FE458B-B097-41A2-890E-39D86440C5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FE458B-B097-41A2-890E-39D86440C5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FE458B-B097-41A2-890E-39D86440C5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ECF9143-30D5-45E7-AF25-2578D0889812}
+	EndGlobalSection
+EndGlobal
