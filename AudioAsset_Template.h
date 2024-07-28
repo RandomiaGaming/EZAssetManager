@@ -2,15 +2,9 @@
 // "#PATH#"
 #pragma once
 #include <Windows.h>
-#OPTIONAL_HEADERS##include "EZAudioClient.h"
+#include "EZAudioClient.h"
 
-constexpr WORD #NAME#_FormatTag = #FORMAT_TAG#;
-constexpr WORD #NAME#_ChannelCount = #CHANNEL_COUNT#;
-constexpr DWORD #NAME#_SampleRate = #SAMPLE_RATE#;
-constexpr DWORD #NAME#_AverageBytesPerSecond = #AVERAGE_BYTES_PER_SECOND#;
-constexpr WORD #NAME#_BlockAlign = #BLOCK_ALIGN#;
-constexpr WORD #NAME#_BitsPerSample = #BITS_PER_SAMPLE#;
-constexpr WORD #NAME#_ExtraSize = #EXTRA_SIZE#;
+constexpr UINT32 #NAME#_Length = #LENGTH#;
 constexpr const BYTE #NAME#_Buffer[] = #BUFFER#;
 
-constexpr EZ::AudioAsset #NAME#_Asset  = { #NAME#_FormatTag, #NAME#_ChannelCount, #NAME#_SampleRate, #NAME#_AverageBytesPerSecond, #NAME#_BlockAlign, #NAME#_BitsPerSample, #NAME#_ExtraSize, #NAME#_Buffer };
+constexpr EZ::AudioAsset #NAME#_Asset  = { #NAME#_Length, #NAME#_Buffer };
