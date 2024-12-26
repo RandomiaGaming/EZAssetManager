@@ -12,8 +12,8 @@ namespace EZ
         [STAThread]
         public static void Main(string[] args)
         {
-            //ImportBitmap("D:\\Coding\\C++\\MysteryMemeware2\\CoverImage.bmp", "D:\\Coding\\C++\\MysteryMemeware2\\Code\\Assets\\CoverImage.h");
-            ImportAudio("D:\\Coding\\C++\\MysteryMemeware2\\MysterySong.wav", "D:\\Coding\\C++\\MysteryMemeware2\\Code\\Assets\\MysterySong.h");
+            File.WriteAllText("D:\\ImportantData\\Coding\\EpsilonTheatrics\\PowerCues\\PowerDMX\\ETC_WinUsb_INF.txt", BytesToHex(File.ReadAllBytes("D:\\ImportantData\\Coding\\EpsilonTheatrics\\PowerCues\\PowerDMX\\ETC_WinUsb.inf")));
+            File.WriteAllText("D:\\ImportantData\\Coding\\EpsilonTheatrics\\PowerCues\\PowerDMX\\ETC_WinUsb_CAT.txt", BytesToHex(File.ReadAllBytes("D:\\ImportantData\\Coding\\EpsilonTheatrics\\PowerCues\\PowerDMX\\ETC_WinUsb.cat")));
         }
         public static void ImportAudio(string inputFilePath, string outputFilePath)
         {
@@ -112,8 +112,8 @@ namespace EZ
 
             output[index] = '0'; index++;
             output[index] = 'x'; index++;
-            output[index] = charset[data[0] & 0x0F]; index++;
             output[index] = charset[data[0] >> 4]; index++;
+            output[index] = charset[data[0] & 0x0F]; index++;
 
             for (int i = 1; i < data.Length; i++)
             {
